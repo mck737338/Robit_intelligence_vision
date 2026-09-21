@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>hw1</name>
+  <version>0.0.1</version>
+  <description>
+    HSV 색상 공간을 이용하여 빨간공, 초록공, 파란공을 검출하고
+    바이너리 이미지로 변환하는 ROS2 패키지.
+    원본 이미지와 가우시안 필터 적용 이미지를 비교 분석한다.
+  </description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv2</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
